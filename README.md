@@ -1,7 +1,8 @@
-# docker-tdlib
+# tdlib-docker-cpp
 
-[![DockerHub](https://img.shields.io/docker/automated/akhmetov/tdlib.svg)](https://hub.docker.com/r/akhmetov/tdlib/)
-
-A Docker container with compiled [tdlib](https://github.com/tdlib/td/) inside.
-
-Compiled libraries are in the `/usr/local/lib/` (For example, `/usr/local/lib/libtdjson.so`).
+```
+sudo docker build -t "tdlib-docker-cpp:Dockerfile" .
+sudo docker run -dit tdlib-docker-cpp:Dockerfile
+sudo docker exec -it <container-id> screen -x session1
+# to exit do 'ctrl + a d'
+```
